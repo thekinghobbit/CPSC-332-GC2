@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-container > label, input, textarea {
+            align-self: center;
+            padding: 15px;
+        }
+    </style>
 </head>
 <body>
-    <form>
+    <form action="https://gu-web-dev-2024.github.io/fake-form-submission/submission.html" method="get" class="flex-container">
         <label for="recipeName">Recipe Name</label>
         <input type="text" id="recipeName" name="recipeName">
         <br>
