@@ -39,25 +39,25 @@
 <body>
     <form action="https://gu-web-dev-2024.github.io/fake-form-submission/submission.html" method="get" class="flex-container">
         <label for="recipeName">Recipe Name</label>
-        <input type="text" id="recipeName" name="recipeName">
+        <input type="text" id="recipeName" name="recipeName" required="true" minlength="50">
         <br>
         <label for="recipeDescription">Recipe Description</label>
-        <textarea id="recipeDescription" name="recipeDescription"></textarea>
+        <textarea id="recipeDescription" name="recipeDescription" required="true"></textarea>
         <br>
         <label for="preparationTime">Preparation Time</label>
-        <input type="number" id="preparationTime" name="preparationTime">
+        <input type="number" id="preparationTime" name="preparationTime" required="true" min="0">
         <br>
         <label for="ingredients">Ingredients</label>
-        <input type="text" id="ingredients" name="ingredients">
+        <input type="text" id="ingredients" name="ingredients" required="true">
         <br>
         <label for="cookingInstructions">Cooking Instructions</label>
-        <input type="text" id="cookingInstructions" name="cookingInstructions">
+        <input type="text" id="cookingInstructions" name="cookingInstructions" required="true">
         <br>
         <label for="recipeImage">Recipe Image</label>
-        <input type="file" id="recipeImage" name="recipeImage">
+        <input type="file" id="recipeImage" name="recipeImage" required="true">
         <br>
         <label for="cuisine">Cuisine</label>
-        <select name="cuisine" id="cuisine">
+        <select name="cuisine" id="cuisine" required="true">
             <option value="volvo">Russian</option>
             <option value="saab">Siberian</option>
             <option value="mercedes">Slavinc</option>
